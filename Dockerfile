@@ -11,11 +11,9 @@ RUN  apt-get update &&  \
 
 
 # Copier les fichiers de l'hôte vers l'image
-RUN git clone https://github.com/Ciliste/saedocker-sae203.git
+RUN git clone https://github.com/Erreiip/docker-sae203-1.git
 
-RUN cp -r saedocker-sae203/html /var/www/
-
-RUN java saedocker-sae203/serveur/Serveur.java;
+RUN cp -r docker-sae203-1/html/ /var/www/
 
 
 # Exposer le port 80
